@@ -1557,6 +1557,13 @@ span {
   justify-content: flex-end;
   font-family: var(--mont);
 }
+.offcanvas-nav .offcanvas-menu .navbar__item a.close-offcanvas-menu,
+.offcanvas-nav .offcanvas-menu .navbar__item button.close-offcanvas-menu {
+  border-radius:0;
+  background-color:transparent;
+  height: auto;
+  min-height: auto;
+}
 .offcanvas-nav .offcanvas-menu .navbar__item a:hover,
 .offcanvas-nav .offcanvas-menu .navbar__item button:hover {
   color: var(--quaternary-color);
@@ -2358,7 +2365,7 @@ span {
 }
 .tp-story .tp-story__single p:nth-last-of-type(1) {
   color: rgba(255, 255, 255, 0.5019607843);
-  text-transform: uppercase;
+  text-transform: none;
 }
 .tp-story .active a {
   color: var(--quaternary-color);
