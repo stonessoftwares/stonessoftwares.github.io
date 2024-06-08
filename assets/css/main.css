@@ -2211,6 +2211,7 @@ span {
 }
 .footer .footer__thumb img {
   min-height: 300px;
+  filter: hue-rotate(162deg);
 }
 .footer .btn-anim {
   margin-left: auto;
@@ -2254,7 +2255,7 @@ span {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3137254902) 50%, transparent 50%);
 }
 .footer .anime span:nth-of-type(6) {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5019607843) 50%, transparent 50%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5419607843) 50%, transparent 50%);
 }
 .footer ul li {
   margin-bottom: 30px;
@@ -2319,6 +2320,7 @@ span {
   z-index: -1;
   max-width: 4vw;
   min-width: 40px;
+  filter: hue-rotate(162deg);
 }
 
 /* ==== 
