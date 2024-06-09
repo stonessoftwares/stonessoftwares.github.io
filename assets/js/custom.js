@@ -85,6 +85,8 @@
      38. footer shape animation
      -------------------------------------------------
      39. lenis smooth scroll
+    -------------------------------------------------
+     40. contact submit
 
     ==================================================
 ============== */
@@ -1158,5 +1160,26 @@
     gsap.ticker.lagSmoothing(0);
 
     ScrollTrigger.update();
+
+    /**
+     * ======================================
+     * 40. contact submit
+     * ======================================
+     */
+    $('#contact-submit').submit((e)=>{
+      e.preventDefault();
+      let mailtoLink = 'mailto:stonessoftwares2024@gmail.com?';
+      const subject = "Stone Software Enquire";
+      const name = $('#contactName').val();
+      const email = $('#contactEmail').val();
+      const company = $('#companyName').val();
+      const message = $('#userMessage').val();
+
+      mailtoLink += 'subject=' + encodeURIComponent(subject) + '&';
+      mailtoLink += 'body=' + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nCompany: " + company + "\n\nMessage: " + message);
+      window.location.href = mailtoLink;
+      $('#contact-submit')[0].reset();
+    });
+    
   });
 })(jQuery);
