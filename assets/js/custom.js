@@ -1169,7 +1169,7 @@
     $('#contact-submit').submit((e)=>{
       e.preventDefault();
       let mailtoLink = 'mailto:stonessoftwares2024@gmail.com?';
-      const subject = "Stone Software Enquire";
+      const subject = "Stone Softwares Enquire";
       const name = $('#contactName').val();
       const email = $('#contactEmail').val();
       const company = $('#companyName').val();
